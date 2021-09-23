@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
     <title>Resource App</title>
 </head>
 <body>
@@ -30,7 +33,7 @@
             <h1>Easy Access to Local Resources for the community and by the community.</h1>
             <h3>All your resources, all in one place.</h3>
             <div id="search-bar">
-                <input type="text" placeholder="Search Community Resources">
+                <input id="search-input" type="text" placeholder="Search Community Resources">
                 <button id="search-btn">Search</button>
             </div>
         </div>
@@ -39,11 +42,14 @@
     <!-- THIS IS THE CATEGORY SECTION -->
     <div id="category-section">
         <div id="category-container">
-            <div class="category-card">Health</div>
-            <div class="category-card">Education</div>
-            <div class="category-card">Community Resources</div>
-            <div class="category-card">Jobs</div>
-            <div class="category-card">Legal</div>
+            <h2>Search by Category</h2>
+            <div id="category-card-container">
+                <div class="category-card">Health</div>
+                <div class="category-card">Education</div>
+                <div class="category-card">Community Resources</div>
+                <div class="category-card">Jobs</div>
+                <div class="category-card">Legal</div>
+        </div>
         </div>
     </div>
     
