@@ -115,8 +115,8 @@ h1 {
 h2 {
 	font-size: 2.4em;
 	font-family: 'Noto Serif', serif;
-	padding-bottom: 0.2em;
-	margin-bottom: 1.4em;
+	/* padding-bottom: 0.2em; */
+	margin-bottom: 1em;
 }
 h3 {
 	font-size: 1.7rem;
@@ -244,6 +244,9 @@ textarea:focus {
 /* -------ABOUT PAGE-------- */
 #down-arrow {
 	margin-top: 2em;
+}
+.profile-content h4 {
+	padding-bottom: 0;
 }
 
 /* MISSION SECTION */
