@@ -37,6 +37,9 @@ nav {
 	padding: 1.8em 4em;
 	width: 100%;
 }
+nav ul li a {
+	font-family: 'Noto Serif', serif;
+}
 #navbar-container {
 	display: flex;
 	justify-content: space-between;
@@ -49,6 +52,9 @@ nav {
 }
 #links-container ul li {
 	padding: 0 0.8em;
+}
+#logo {
+	font-family: 'Noto Serif', serif;
 }
 #signup-btn {
 	padding: 0.5em 1em;
