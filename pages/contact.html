@@ -4,22 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
     <title>Contact</title>
 </head>
 <body>
-    <div class="form-section">
+        <!-- THIS IS THE NAVBAR -->
+        <nav>
+            <div id="navbar-container">
+                <div id="logo">Resource App</div>
+                <div id="links-container">
+                    <ul id="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="community.html">Community Board</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li ><a href="" id="signup-btn">Signup</a></li>
+                        <li ><a href="" id="signin-btn">Signin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- FORM SECTION -->
+    <div id="form-section">
         <h1>Get in touch.</h1>
         <h3>Have any questions? Feel free to reach out here!</h3>
         <div id="form-container">
             <form>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname">
+                <input class="form-input" type="text" id="fname" name="fname" placeholder="First Name"><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+                <input type="text" id="lname" name="lname" placeholder="Email">
+                <textarea type="text" id="lname" name="lname" placeholder="Message"></textarea>
               </form>
         </div>
+        <div class="contact-card">
+            <h3>Contact Information</h3>
+            <div class="contact-content">
+            <div class="contact-info-left">
+                <h6>Contact Informaiton</h6>
+                <p>hello@resourcesapp.com</p>
+                <h6>Phone Number</h6>
+                <p>555.555.55555</p>
+            </div>
+            <div class="contact-info-right">
+                <ul>
+                    <li>Monday-Friday: 8:00am-5:00pm</li>
+                    <li>Saturday: 8:00am-5:00pm</li>
+                    <li>Sunday: 8:00am-5:00pm</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="contact-card">
+            <h3>Contact Information</h3>
+            <div class="contact-content">
+            <div class="contact-info-left">
+                <h6>Contact Informaiton</h6>
+                <p>hello@resourcesapp.com</p>
+                <h6>Phone Number</h6>
+                <p>555.555.55555</p>
+            </div>
+            <div class="contact-info-right">
+                <ul>
+                    <li>Monday-Friday: 8:00am-5:00pm</li>
+                    <li>Saturday: 8:00am-5:00pm</li>
+                    <li>Sunday: 8:00am-5:00pm</li>
+                </ul>
+            </div>
+        </div>
+        </div>
     </div>
-    <div id="contact-info-section">
+    <!-- <div id="contact-info-section">
         <div id="contact-info-container">
             <div class="contact-card">
                 <h3></h3>
@@ -55,7 +110,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
 </body>
 </html>

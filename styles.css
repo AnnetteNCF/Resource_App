@@ -26,6 +26,7 @@ a {
 body {
 	background-color: var(--light-pink);
 	color: var(--black);
+	overflow-x: hidden;
 }
 
 nav {
@@ -67,15 +68,24 @@ nav {
 
 /* REUSED STYLES */
 #hero-section,
-#category-section {
+#category-section,
+#about-hero-section,
+#mission-section,
+#team-section,
+#form-section {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
 	padding: 6em 0;
+	/* background-color: red; */
 }
 #hero-container,
-#category-container {
+#category-container,
+#about-hero-container,
+#mission-container,
+#team-container,
+#form-container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -83,21 +93,28 @@ nav {
 	width: 960px;
 	max-width: var(--max-width);
 }
+ul {
+	list-style: none;
+}
 h1 {
 	font-size: 3.4rem;
 	text-align: center;
 	letter-spacing: 0.1em;
 	padding-bottom: 0.2em;
 	font-family: 'Noto Serif', serif;
+	/* width: 88%; */
 }
 h2 {
 	font-size: 2.4em;
 	font-family: 'Noto Serif', serif;
-	padding-bottom: 0.8em;
+	padding-bottom: 0.2em;
+	margin-bottom: 1.4em;
 }
 h3 {
 	font-size: 1.7rem;
 	font-weight: 300;
+	text-align: center;
+	width: 90%;
 }
 /* HERO SECTION */
 
@@ -107,7 +124,7 @@ h3 {
 	display: flex;
 }
 #search-btn {
-	padding: 1.8em 2em;
+	padding: 1.4em 2em;
 	background-color: var(--dark-green);
 	border: none;
 	border-radius: 0 var(--border-radius) var(--border-radius)
@@ -123,14 +140,15 @@ input[type='text'] {
 	font-family: 'Noto Serif', serif;
 	font-size: 1em;
 	font-weight: 400;
-	padding: 1.4em 1.8em;
+	padding: 1.4em 2em;
 	background-color: var(--dark-pink);
 	border: none;
 	border-radius: var(--border-radius) 0 var(--border-radius)
 		var(--border-radius);
 }
 textarea:focus,
-input:focus {
+input:focus,
+textarea:focus {
 	outline: none;
 	background-color: var(--light-pink);
 	border: 2px solid var(--dark-pink);
@@ -160,4 +178,116 @@ input:focus {
 	max-width: 200px;
 	text-align: center;
 	cursor: pointer;
+}
+
+/* -------ABOUT PAGE-------- */
+#down-arrow {
+	margin-top: 2em;
+}
+
+/* MISSION SECTION */
+#mission-container {
+	background-color: rgba(238, 223, 213, 0.5);
+	padding: 2em;
+}
+#mission-container h3,
+#team-container h3 {
+	font-size: 1em;
+}
+/* TEAM SECTION */
+#card-container,
+#form-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* background-color: mediumslateblue; */
+	max-width: 1560px;
+	width: 100vw;
+	padding: 0 2em;
+}
+#team-container h2 {
+	margin: 0;
+}
+#team-container h3 {
+	margin-bottom: 2em;
+}
+.team-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	background-color: var(--light-pink);
+	border: 2px solid var(--dark-pink);
+	padding: 1em;
+	border-radius: var(--border-radius-sm);
+	margin: 0.8em;
+}
+.profile-pic {
+	background-image: url('img/profile.jpg');
+	background-color: #cccccc;
+	max-height: 60px;
+	height: 52px;
+	width: 52px;
+	max-width: 60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: var(--border-radius);
+	margin-right: 0.8em;
+}
+.profile-content h4 {
+	/* display: flex; */
+	font-size: 1.1em;
+	font-family: 'Noto Serif', serif;
+}
+.profile-content p {
+	color: var(--dark-green);
+	font-weight: 600;
+}
+
+/* FORM SECTION */
+#form-section {
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	/* background-color: orange; */
+}
+#form-container {
+	/* background-color: purple; */
+}
+textarea {
+	width: 100%;
+	background-color: var(--dark-pink);
+	border-radius: var(--border-radius-sm);
+}
+input {
+	/* width: 100%;
+	font-family: 'Noto Serif', serif;
+	font-size: 1em;
+	font-weight: 400;
+	padding: 1.4em 2em;
+	background-color: var(--dark-pink);
+	border: none;
+	border-radius: var(--border-radius) 0 var(--border-radius)
+		var(--border-radius);
+	background-color: orange; */
+}
+.contact-card {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	background-color: var(--dark-green);
+	padding: 2em;
+}
+.contact-content {
+	display: flex;
+	flex-direction: row;
+}
+.contact-info-left {
+	/* background-color: orange; */
+}
+.contact-info-right {
+	/* background-color: purple; */
 }
