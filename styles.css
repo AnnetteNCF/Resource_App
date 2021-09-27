@@ -40,36 +40,36 @@ nav {
 nav ul li a {
 	font-family: 'Noto Serif', serif;
 }
-#navbar-container {
+.navbar-container {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 }
 
-#links-container ul {
+.links-container ul {
 	display: flex;
 	list-style: none;
 }
-#links-container ul li {
+.links-container ul li {
 	padding: 0 0.8em;
 }
-#logo {
+.logo {
 	font-family: 'Noto Serif', serif;
 }
-#signup-btn {
+.signup-btn {
 	padding: 0.5em 1em;
 	background-color: var(--dark-pink);
 	border-radius: var(--border-radius);
 	font-family: 'Noto Serif', serif;
 }
-#signup-btn:hover {
+.signup-btn:hover {
 }
-#signin-btn {
+.signin-btn {
 	padding: 0.5em 1em;
 	border: 2px solid var(--dark-pink);
 	border-radius: var(--border-radius);
 }
-#signin-btn:hover {
+.signin-btn:hover {
 }
 
 /* REUSED STYLES */
@@ -78,7 +78,8 @@ nav ul li a {
 #about-hero-section,
 #mission-section,
 #team-section,
-#form-section {
+#form-section,
+#section {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -91,7 +92,8 @@ nav ul li a {
 #about-hero-container,
 #mission-container,
 #team-container,
-#form-container {
+#form-container,
+.container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -122,6 +124,13 @@ h3 {
 	text-align: center;
 	width: 90%;
 }
+h4 {
+	padding-bottom: 0.8em;
+	font-family: 'Noto Serif', serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
 /* HERO SECTION */
 
 #search-bar {
@@ -186,6 +195,52 @@ textarea:focus {
 	cursor: pointer;
 }
 
+/* FOOTER */
+#section {
+	background-color: var(--dark-green);
+	color: var(--white);
+	padding: 3em;
+}
+.container {
+	justify-content: space-between;
+	flex-direction: row;
+	align-content: center;
+	max-width: var(--max-width);
+	width: var(--max-width);
+}
+#branding h2 {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+#branding p {
+	width: 68%;
+}
+#links-section-container {
+	display: flex;
+	flex-direction: row;
+}
+.footer-links {
+	padding: 0 1em;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+.footer-link a {
+	color: var(--white);
+}
+.footer-links li {
+	padding-bottom: 0.4em;
+}
+#copyright {
+	text-align: center;
+	margin: auto 0;
+	background-color: purple;
+	color: var(--white);
+}
 /* -------ABOUT PAGE-------- */
 #down-arrow {
 	margin-top: 2em;
