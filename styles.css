@@ -80,7 +80,7 @@ nav ul li a {
 #mission-section,
 #team-section,
 #form-section,
-#section,
+.footer-section,
 .core-values-section {
 	width: 100%;
 	display: flex;
@@ -216,7 +216,7 @@ textarea:focus,
 }
 
 /* FOOTER */
-#section {
+.footer-section {
 	background-color: var(--dark-green);
 	color: var(--white);
 	padding: 3em;
@@ -228,16 +228,18 @@ textarea:focus,
 	max-width: var(--max-width);
 	width: var(--max-width);
 }
-#branding h2 {
+.branding h2 {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
+	color: var(--dark-pink);
 }
-#branding p {
+.branding p {
+	margin-top: 0.4em;
 	width: 68%;
 }
-#links-section-container {
+.links-section-container {
 	display: flex;
 	flex-direction: row;
 }
@@ -249,11 +251,18 @@ textarea:focus,
 	justify-content: flex-start;
 	align-content: flex-start;
 }
+.footer-links h4 {
+	color: var(--dark-pink);
+}
 .footer-link a {
 	color: var(--white);
+	font-size: 0.9em;
 }
 .footer-links li {
-	padding-bottom: 0.4em;
+	padding-bottom: 0.2em;
+}
+.footer-social a img {
+	width: 36px;
 }
 #copyright {
 	text-align: center;
@@ -306,7 +315,7 @@ textarea:focus,
 }
 
 /* TEAM SECTION */
-#card-container,
+.team-card-container,
 #form-container {
 	display: flex;
 	flex-wrap: wrap;
