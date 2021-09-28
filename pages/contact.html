@@ -28,90 +28,60 @@
         <!-- FORM SECTION -->
     <div id="form-section">
         <h1>Get in touch.</h1>
-        <h3>Have any questions? Feel free to reach out here!</h3>
-        <div id="form-container">
+        <p class="paragraph-sm">Have any questions? Feel free to reach out here!</p>
+        
             <form>
-                <input class="form-input" type="text" id="fname" name="fname" placeholder="First Name"><br>
-                <input type="text" id="lname" name="lname" placeholder="Last Name">
-                <input type="text" id="lname" name="lname" placeholder="Email">
-                <textarea type="text" id="lname" name="lname" placeholder="Message"></textarea>
+                <div class="top-row">
+                    <input class="form-input" type="text" id="fname" name="fname" placeholder="First Name" required><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                </div>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+                <textarea type="text" id="message" name="message" placeholder="Message" required></textarea>
+                <button id="form-btn">Submit</button>
               </form>
-        </div>
-        <div class="contact-card">
-            <h3>Contact Information</h3>
-            <div class="contact-content">
-            <div class="contact-info-left">
-                <h6>Contact Informaiton</h6>
-                <p>hello@resourcesapp.com</p>
-                <h6>Phone Number</h6>
-                <p>555.555.55555</p>
+        
+        <div id="contact-card-container">
+            <!-- CARD ONE -->
+            <div class="contact-card">
+                <h3>Contact Information</h3>
+                <div class="contact-content">
+                    <div class="contact-left">
+                        <ul>
+                            <li>
+                                <h4>Email</h4>
+                                <p>hello@resourcesapp.com</p>
+                            </li>
+                            <li>
+                                <h4>Phone</h4>
+                                <p>555.555.55555</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-right">
+                        <ul>
+                            <li><h4>Hours</h4></li>
+                            <li>Mon-Fri: 8:00am-5:00pm</li>
+                            <li>Saturday: 8:00am-5:00pm</li>
+                            <li>Sunday: 8:00am-5:00pm</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="contact-info-right">
-                <ul>
-                    <li>Monday-Friday: 8:00am-5:00pm</li>
-                    <li>Saturday: 8:00am-5:00pm</li>
-                    <li>Sunday: 8:00am-5:00pm</li>
-                </ul>
+            <!-- CARD TWO -->
+            <div class="contact-card">
+                <h3>Join Our Listing</h3>
+                <div class="join-content">
+                    <p>Apply to be a part of our listing. This is a free process that allows companies to seemlessly become a part of our community network. Simply fill out the this form and we will reach out to confirm once you are on our list.</p>
+                    <div class="join-btn-container">
+                        <button id="join-btn">Join Now</button>
+                        <img src="/img/horizontal_arrow.svg" alt="">
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
+           
 
-        <div class="contact-card">
-            <h3>Contact Information</h3>
-            <div class="contact-content">
-            <div class="contact-info-left">
-                <h6>Contact Informaiton</h6>
-                <p>hello@resourcesapp.com</p>
-                <h6>Phone Number</h6>
-                <p>555.555.55555</p>
-            </div>
-            <div class="contact-info-right">
-                <ul>
-                    <li>Monday-Friday: 8:00am-5:00pm</li>
-                    <li>Saturday: 8:00am-5:00pm</li>
-                    <li>Sunday: 8:00am-5:00pm</li>
-                </ul>
-            </div>
-        </div>
         </div>
     </div>
-    <!-- <div id="contact-info-section">
-        <div id="contact-info-container">
-            <div class="contact-card">
-                <h3></h3>
-                <div class="contact-info-left">
-                    <h6>Contact Informaiton</h6>
-                    <p>hello@resourcesapp.com</p>
-                    <h6>Phone Number</h6>
-                    <p>555.555.55555</p>
-                </div>
-                <div class="contact-info-right">
-                    <ul>
-                        <li>Monday-Friday: 8:00am-5:00pm</li>
-                        <li>Saturday: 8:00am-5:00pm</li>
-                        <li>Sunday: 8:00am-5:00pm</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="contact-card">
-                <h3></h3>
-                <div class="contact-info-left">
-                    <h6>Contact Informaiton</h6>
-                    <p>hello@resourcesapp.com</p>
-                    <h6>Phone Number</h6>
-                    <p>555.555.55555</p>
-                </div>
-                <div class="contact-info-right">
-                    <ul>
-                        <li>Monday-Friday: 8:00am-5:00pm</li>
-                        <li>Saturday: 8:00am-5:00pm</li>
-                        <li>Sunday: 8:00am-5:00pm</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> -->
     
      <!-- THIS IS THE FOOTER -->
      <footer id="section">
