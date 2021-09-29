@@ -161,8 +161,8 @@ input[type='text'] {
 	font-size: 1em;
 	font-weight: 400;
 	padding: 1.4em 2em;
-	background-color: var(--dark-pink);
-	border: none;
+	background-color: var(--medium-pink);
+	border: 2px solid var(--dark-pink);
 	border-radius: var(--border-radius) 0 var(--border-radius)
 		var(--border-radius);
 }
@@ -396,7 +396,7 @@ form {
 	margin: 0.4em 0;
 	border: none;
 	border-radius: var(--border-radius-sm);
-	background-color: var(--dark-pink);
+	background-color: var(--medium-pink);
 }
 #fname,
 #lname {
@@ -405,14 +405,14 @@ form {
 
 textarea {
 	width: 100%;
-	background-color: var(--dark-pink);
+	background-color: var(--medium-pink);
 	border-radius: var(--border-radius-sm);
 	height: 8em;
 	resize: none;
 }
 #form-btn {
-	background-color: #bb9277;
-	color: var(--white);
+	background-color: var(--dark-pink);
+	color: var(--black);
 	font-size: 1rem;
 	font-weight: 700;
 }
