@@ -8,7 +8,6 @@
     <title>Search Page</title>
 </head>
 <body>
-        <!-- THIS IS THE NAVBAR -->
          <!-- THIS IS THE NAVBAR -->
     <nav>
         <div class="navbar-container">
@@ -26,55 +25,208 @@
         </div>
     </nav>
 
-    <div class="search-results-container">
+    <div class="search-results-section">
+        <div class="search-results-container">
         <!-- SIDE BAR -->
         <div id="side-bar">
-            <div class="category-content"></div>
+            <div class="filter">
+                <div>Filter by</div>
+                <div>Reset Filter</div>
+            </div>
+
+            <hr class="line" />
+            <div class="category-content">
+                <h5>Distance</h5>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>0-5 miles</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>5-10 miles</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>10-15 miles</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>15+ miles</span>
+                </label>
+            </div>
+
+
+            <hr class="line" />
+            <div class="category-content">
+                <h5>Category</h5>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>Primary Clinic</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>Alternative Medicine</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>Mental Health</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>Therapist</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>Psychologist</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>Dental</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>Optometry</span>
+                </label> 
+            </div>
+
+            <hr class="line" />
+            <div class="category-content">
+                <h5>Insurance</h5>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>Insurance</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" name="key" value="value" />
+                    <span>No Insurance</span>
+                </label>
+            </div>
         </div>
         <!-- SEARCH RESULTS -->
-        <div class="search-results">
-            <div id="top-row">
-                <div id="results-count">Results 4</div>
-                <div class="sort-container">
-                    <p>Sort by</p>
-                    <button>Best Match</button>
+        <div class="search-content-container">
+            <!-- SEARCH BAR -->
+            <div class="page-search-bar-container">
+                <input id="page-search-bar" type="text" placeholder="Search Community Resources">
+                <button id="search-btn-2">Search</button>
+            </div>
+
+             <!-- CATEGORY BUTTONS -->
+             <div id="category-btn-container">
+                <div class="category-btn selected-btn">Health</div>
+                <div class="category-btn">Community Resources</div>
+                <div class="category-btn">Jobs</div>
+                <div class="category-btn">Education</div>
+                <div class="category-btn">Legal</div>
+            </div>
+           
+                <div class="results-top-row">
+                    <div id="results-count">Results 4</div>
+                    <div class="sort-container">
+                        <p>Sort by</p>
+                        <div>Best Match</div>
+                    </div>
+                </div>
+            
+           
+            <!-- SEARCH RESULTS CARDS -->
+
+            <!-- CARD 1 -->
+            <div class="search-results-card">
+                <div class="left-side">
+                    <img class="resource-img" src="../img/profile.jpg" alt=""/>
+                    <div class="visit">Visit</div>
+                </div>
+                <div class="right-side">
+                    <div class="name-open">
+                        <h4 class="resource-name">Simply Health</h4>
+                        <div class="open">Open</div>
+                    </div>
+                    <h6 class="resource-location">202 Morningside Dr SE, Albuquerque, NM 87108</h6>
+                    <p class="resource-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique. Ultricies mi eget mauris pharetra. In dictum non consectetur a erat nam at. </p>
+                    <div class="tags-container">
+                        <div class="tag">Health</div>
+                        <div class="tag">Clinic</div>
+                        <div class="tag">Alternative Medicine</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- CATEGORY BUTTONS -->
-        <div id="category-btn-container">
-            <div class="category-btn">Health</div>
-            <div class="category-btn">Community Resources</div>
-            <div class="category-btn">Jobs</div>
-            <div class="category-btn">Education</div>
-            <div class="category-btn">Legal</div>
-        </div>
-        <!-- SEARCH RESULTS -->
-        <div class="search-results-card">
-            <div class="left-side">
-                <img />
-                <button class="open">Open</button>
-            </div>
-            <div class="right-side">
-                <h4 class="resource-name">Simply Health</h4>
-                <h6 class="resource-location">123 Health St</h6>
-                <p class="resource-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique. Ultricies mi eget mauris pharetra. In dictum non consectetur a erat nam at. </p>
-                <div class="tags-container">
-                    <div class="tag">Health</div>
-                    <div class="tag">Clinic</div>
-                    <div class="tag">Alternative Medicine</div>
+
+            <!-- CARD 2 -->
+            <div class="search-results-card">
+                <div class="left-side">
+                    <img class="resource-img" src="../img/profile.jpg" alt=""/>
+                    <div class="visit">Visit</div>
+                </div>
+                <div class="right-side">
+                    <div class="name-open">
+                        <h4 class="resource-name">Simply Health</h4>
+                        <div class="open">Open</div>
+                    </div>
+                    <h6 class="resource-location">202 Morningside Dr SE, Albuquerque, NM 87108</h6>
+                    <p class="resource-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique. Ultricies mi eget mauris pharetra. In dictum non consectetur a erat nam at. </p>
+                    <div class="tags-container">
+                        <div class="tag">Health</div>
+                        <div class="tag">Clinic</div>
+                        <div class="tag">Alternative Medicine</div>
+                    </div>
                 </div>
             </div>
+            
+            <!-- CARD 3 -->
+            <div class="search-results-card">
+                <div class="left-side">
+                    <img class="resource-img" src="../img/profile.jpg" alt=""/>
+                    <div class="visit">Visit</div>
+                </div>
+                <div class="right-side">
+                    <div class="name-open">
+                        <h4 class="resource-name">Simply Health</h4>
+                        <div class="open">Open</div>
+                    </div>
+                    <h6 class="resource-location">202 Morningside Dr SE, Albuquerque, NM 87108</h6>
+                    <p class="resource-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique. Ultricies mi eget mauris pharetra. In dictum non consectetur a erat nam at. </p>
+                    <div class="tags-container">
+                        <div class="tag">Health</div>
+                        <div class="tag">Clinic</div>
+                        <div class="tag">Alternative Medicine</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="search-results-card">
+                <div class="left-side">
+                    <img class="resource-img" src="../img/profile.jpg" alt=""/>
+                    <div class="visit">Visit</div>
+                </div>
+                <div class="right-side">
+                    <div class="name-open">
+                        <h4 class="resource-name">Simply Health</h4>
+                        <div class="open">Open</div>
+                    </div>
+                    <h6 class="resource-location">202 Morningside Dr SE, Albuquerque, NM 87108</h6>
+                    <p class="resource-summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget aliquet nibh praesent tristique. Ultricies mi eget mauris pharetra. In dictum non consectetur a erat nam at. </p>
+                    <div class="tags-container">
+                        <div class="tag">Health</div>
+                        <div class="tag">Clinic</div>
+                        <div class="tag">Alternative Medicine</div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
+    </div>
+
      <!-- THIS IS THE FOOTER -->
-     <footer id="section">
+     <footer class="footer-section">
         <div class="container">
-            <div id="branding">
+            <div class="branding">
                 <h2>Resources App</h2>
                 <p>Bridging local resources for and by the community.</p>
             </div>
-            <div id="links-section-container">
+            <div class="links-section-container">
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul class="nav-links">
@@ -101,12 +253,12 @@
                         <li class="footer-link"><a href="">Mon-Fri: 8:00-5:00pm</a></li>
                         <li class="footer-link"><a href="">Phone: 555.555.5555</a></li>
                         <li class="footer-link"><a href="">hello@resourcesapp.com</a></li>
-                        <div id="footer-social">
-                            <img src="" alt="Facebook">
-                            <img src="" alt="Instagram">
-                            <img src="" alt="Twitter">
-                        </div>
                     </ul>
+                    <div class="footer-social">
+                        <a href=""><img src="/img/facebook.svg" alt="Facebook" /></a>
+                        <a href=""><img src="/img/instagram.svg" alt="Instagram" /></a>
+                        <a href=""><img src="/img/twitter.svg" alt="Twitter" /></a>
+                    </div>
                 </div>
             </div>
         </div>
