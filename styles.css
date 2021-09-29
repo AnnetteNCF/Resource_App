@@ -288,20 +288,20 @@ textarea:focus,
 /* MISSION SECTION */
 .core-values-container {
 	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
 	max-width: var(--max-width);
-	/* width: 1200px; */
-	/* width: var(--max-width); */
+}
+.core-card-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
 .core-card {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	background-color: rgba(238, 223, 213, 0.9);
-	padding: 1.2em;
-	width: 320px;
-	height: 100%;
+	padding: 1em 0.6em;
 	margin: 0 0.4em;
 	border-radius: var(--border-radius-sm);
 	box-shadow: rgba(238, 223, 213, 0.3) 0px 4px 12px;
@@ -705,12 +705,19 @@ label > input[type='checkbox']:checked + * {
 		justify-content: center;
 		flex-direction: column;
 	}
-	#contact-card-container {
+	#contact-card-container,
+	.core-card-container {
+		/* justify-content: center; */
+		align-items: center;
 		flex-direction: column;
 	}
-	.contact-card {
+	.contact-card,
+	.core-card {
 		width: 100%;
 		margin-bottom: 1em;
+	}
+	.core-card {
+		width: 80%;
 	}
 	.join-btn-container {
 		display: flex;
