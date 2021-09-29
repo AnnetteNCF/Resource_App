@@ -268,7 +268,8 @@ textarea:focus,
 	padding-bottom: 0.2em;
 }
 .footer-social a img {
-	width: 36px;
+	width: 28px;
+	height: 28px;
 }
 #copyright {
 	text-align: center;
