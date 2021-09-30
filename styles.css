@@ -531,6 +531,7 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
 	width: 86%;
 }
@@ -542,6 +543,7 @@ textarea {
 	width: 36px;
 	height: auto;
 	z-index: 100;
+	margin-left: 0.8em;
 }
 #join-btn {
 	color: var(--dark-pink);
