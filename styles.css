@@ -82,7 +82,8 @@ nav ul li a {
 #form-section,
 .footer-section,
 .core-values-section,
-.search-results-section {
+.search-results-section,
+.single-search-section {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -97,7 +98,8 @@ nav ul li a {
 #form-container,
 .container,
 .core-values-container,
-.search-results-container {
+.search-results-container,
+.single-search-container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -323,7 +325,8 @@ textarea:focus,
 
 /* TEAM SECTION */
 .team-card-container,
-#form-container {
+#form-container,
+.single-search-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -498,13 +501,10 @@ ul li h4 {
 	justify-content: space-between;
 	width: var(--max-width);
 	max-width: var(--max-width);
-	/* background-color: violet; */
 }
-#side-bar {
+.side-bar {
 	display: flex;
 	flex-direction: column;
-	/* position: relative; */
-	/* background-color: orangered; */
 	background-color: var(--white);
 	width: 25vw;
 	height: 100%;
@@ -639,18 +639,12 @@ label > input[type='checkbox']:checked + * {
 	align-items: center;
 	align-content: center;
 	padding: 0.2em 2em 0 2em;
-	/* background-color: olivedrab; */
 }
-/* .left-side img {
-	width: 100px;
-	height: 100px;
 
-} */
 .resource-img {
 	width: 100px;
 	height: 100px;
 	border-radius: 5em;
-	/* background-color: red; */
 }
 .visit {
 	text-align: center;
@@ -695,6 +689,70 @@ label > input[type='checkbox']:checked + * {
 	margin: 1.6em 0;
 	border: 1px solid var(--light-green);
 }
+
+/* -------SINGLE SEARCH PAGE-------- */
+.center-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.resource-page-img {
+	height: 200px;
+	width: 100%;
+	border-radius: var(--border-radius-sm);
+	margin-bottom: 1em;
+}
+.visit-long {
+	width: 100%;
+	margin: 0;
+	padding-right: 0;
+	padding-left: 0;
+	margin-bottom: 2em;
+}
+.tag-container-2 {
+	flex-wrap: wrap;
+}
+.tag-2 {
+	margin-top: 1em;
+}
+.side-location {
+	margin-bottom: 1.2em;
+}
+.resource-hours {
+	margin-bottom: 2em;
+}
+.resource-hours h5 {
+	font-size: 1em;
+}
+.single-search-container {
+	height: 100%;
+	justify-content: flex-start;
+	align-items: center;
+}
+.single-search-container h4 {
+	margin-bottom: 0.8em;
+}
+.services-list-container {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+}
+.services-list-container ul {
+	margin-right: 2em;
+}
+.resource-banner-img {
+	background-image: url('img/office_img.jpg');
+	width: 100%;
+	height: 16em;
+	border-radius: var(--border-radius-sm);
+	margin-bottom: 2em;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 @media screen and (max-width: 960px) {
 	#fname,
 	#lname {
@@ -722,6 +780,5 @@ label > input[type='checkbox']:checked + * {
 	.join-btn-container {
 		display: flex;
 		justify-content: center;
-		margin-top: 0.8em;
 	}
 }
