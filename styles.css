@@ -610,7 +610,10 @@ ul li h4 {
 	text-decoration: underline;
 	color: var(--dark-green);
 }
-
+.right-side img {
+	position: absolute;
+	right: 0;
+}
 label > input[type='checkbox'] {
 	display: none;
 }
@@ -727,6 +730,7 @@ label > input[type='checkbox']:checked + * {
 	display: flex;
 	padding: 2em 0;
 	border-bottom: 2px solid var(--light-green);
+	position: relative;
 }
 .left-side {
 	display: flex;
