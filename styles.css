@@ -100,7 +100,9 @@ nav ul li a {
 .footer-section,
 .core-values-section,
 .search-results-section,
-.single-search-section {
+.single-search-section,
+.community-section,
+.discussion-section {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -116,7 +118,9 @@ nav ul li a {
 .container,
 .core-values-container,
 .search-results-container,
-.single-search-container {
+.single-search-container,
+.community-container,
+.discussion-container {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -235,7 +239,54 @@ textarea:focus,
 	text-align: center;
 	cursor: pointer;
 }
+/* COMMUNITY SECTION */
+.community-container,
+.discussion-container {
+	flex-direction: row;
+	justify-content: center;
+	max-width: 1560px;
+	width: 100vw;
+	padding: 0 2em;
+	/* background-color: rebeccapurple; */
+}
+.community-container img,
+.discussion-content {
+	margin-right: 1em;
+	/* background: red; */
+}
+.community-content,
+.discussion-content {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	width: 42%;
+	/* background-color: orangered; */
+}
+.community-content h3,
+.discussion-content h3 {
+	text-align: left;
+	font-weight: 600;
+}
+.community-content h4,
+.discussion-content h4 {
+	font-size: 1em;
+	color: var(--dark-green);
+	margin-bottom: 1em;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 600;
+}
 
+/* QUOTE */
+.quote-container {
+	text-align: center;
+	margin: 6em auto;
+	padding-bottom: 4em;
+}
+.quote {
+	font-size: 1.4em;
+	margin-bottom: 0.6em;
+	font-family: 'Noto Serif', serif;
+}
 /* FOOTER */
 .footer-section {
 	background-color: var(--dark-green);
