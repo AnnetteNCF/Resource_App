@@ -72,7 +72,24 @@ nav ul li a {
 }
 .signin-btn:hover {
 }
-
+.menu-btn-container {
+	/* background-color: var(--dark-green); */
+	color: var(--white);
+	padding: 6px 10px;
+	border-radius: 0.4em;
+	display: inline-block;
+	cursor: pointer;
+	display: none;
+}
+.line1,
+.line2,
+.line3 {
+	background-color: var(--dark-green);
+	height: 5px;
+	width: 36px;
+	margin: 6px 0;
+	border-radius: 0.4em;
+}
 /* REUSED STYLES */
 #hero-section,
 #category-section,
@@ -752,7 +769,14 @@ label > input[type='checkbox']:checked + * {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+@media screen and (max-width: 1120px) {
+	.links-container {
+		display: none;
+	}
+	.menu-btn-container {
+		display: inline-block;
+	}
+}
 @media screen and (max-width: 960px) {
 	#fname,
 	#lname {
