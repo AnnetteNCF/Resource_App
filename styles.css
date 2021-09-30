@@ -116,6 +116,7 @@ nav ul li a {
 #mission-container,
 #team-container,
 #form-container,
+.footer-container,
 .container,
 .core-values-container,
 .search-results-container,
@@ -316,7 +317,7 @@ textarea:focus,
 	left: 0;
 	width: 100%;
 }
-.container {
+.footer-container {
 	justify-content: space-between;
 	flex-direction: row;
 	align-content: center;
