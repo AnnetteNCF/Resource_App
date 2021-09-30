@@ -279,7 +279,20 @@ textarea:focus,
 .discussion-content p {
 	line-height: 1.6;
 }
-
+.btn {
+	padding: 0.5em 1em;
+	background-color: var(--dark-pink);
+	border-radius: var(--border-radius);
+	font-family: 'Noto Serif', serif;
+	font-size: 1em;
+	border: none;
+	cursor: pointer;
+	margin-top: 0.5em;
+}
+.green-btn {
+	background-color: var(--dark-green);
+	color: var(--white);
+}
 /* QUOTE */
 .quote-container {
 	text-align: center;
