@@ -275,6 +275,10 @@ textarea:focus,
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 600;
 }
+.community-content p,
+.discussion-content p {
+	line-height: 1.6;
+}
 
 /* QUOTE */
 .quote-container {
