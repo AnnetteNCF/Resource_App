@@ -117,12 +117,8 @@ nav ul li a {
 }
 /* REUSED STYLES */
 .section,
-#about-hero-section,
-#mission-section,
-#team-section,
 #form-section,
 .footer-section,
-.core-values-section,
 .search-results-section,
 .single-search-section,
 .coming-soon-section {
@@ -133,13 +129,9 @@ nav ul li a {
 	padding: 6em 2em;
 }
 .container,
-#about-hero-container,
-#mission-container,
-#team-container,
 #form-container,
 .footer-container,
 .container,
-.core-values-container,
 .search-results-container,
 .single-search-container,
 .coming-soon-container {
@@ -442,9 +434,7 @@ textarea:focus,
 	width: 100vw;
 	padding: 0 2em;
 }
-#team-container h2 {
-	margin: 0;
-}
+
 #team-container h3 {
 	font-size: 1em;
 	margin-bottom: 2em;
@@ -1020,7 +1010,8 @@ label > input[type='checkbox']:checked + * {
 	}
 }
 @media screen and (max-width: 780px) {
-	#hero-container h1 {
+	#hero-container h1,
+	#about-hero-section h1 {
 		font-size: 2.6em;
 	}
 	.paragraph,
@@ -1092,10 +1083,12 @@ label > input[type='checkbox']:checked + * {
 	nav {
 		padding: 1.8em 2em;
 	}
-	#hero-section h1 {
+	#hero-section h1,
+	#about-hero-section h1 {
 		font-size: 2em;
 	}
-	#hero-section p {
+	#hero-section p,
+	#about-hero-section p {
 		font-size: 1em;
 	}
 }
@@ -1103,10 +1096,12 @@ label > input[type='checkbox']:checked + * {
 	nav {
 		padding: 1.8em 1em;
 	}
-	#hero-section h1 {
+	#hero-section h1,
+	#about-hero-section h1 {
 		font-size: 1.5em;
 	}
-	#hero-section p {
+	#hero-section p,
+	#about-hero-section p {
 		font-size: 1em;
 	}
 	#category-container h2 {
