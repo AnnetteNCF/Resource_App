@@ -29,7 +29,30 @@ body {
 	color: var(--black);
 	overflow-x: hidden;
 }
+/* THIS IS THE MENU SECTION */
 
+.menu-section {
+	position: absolute;
+	width: 100%;
+	top: -100vh;
+	z-index: -1;
+	transition: 0.4s ease;
+	background-color: var(--light-pink);
+}
+.menu.active {
+	top: 0;
+	right: 0;
+	z-index: 99;
+	height: 60vh;
+	width: 50vw;
+	background-color: orange;
+}
+
+.menu-container {
+	font-style: italic;
+	transform: translate(-20px);
+	transition: 0.4s ease;
+}
 nav {
 	display: flex;
 	justify-content: center;
