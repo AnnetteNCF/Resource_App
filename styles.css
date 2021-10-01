@@ -957,4 +957,43 @@ label > input[type='checkbox']:checked + * {
 		display: flex;
 		justify-content: center;
 	}
+
+	.footer-container {
+		justify-content: center;
+		flex-direction: column;
+	}
+	.branding {
+		justify-content: center;
+		margin-bottom: 2em;
+	}
+	.branding h2 {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		color: var(--dark-pink);
+	}
+	.branding p {
+		margin-top: 0.4em;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.links-section-container {
+		justify-content: space-between;
+		flex-wrap: wrap;
+		/* background-color: orange; */
+	}
+	.footer-section {
+		padding: 1em;
+	}
+	.footer-links {
+		margin: 1em 0;
+	}
+}
+@media screen and (max-width: 360px) {
 }
